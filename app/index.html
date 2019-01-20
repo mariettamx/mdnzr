@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modernizer</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo"></div>
+    </header>
+    <section class="bg-pattern">
+        <article class="container">
+            <div class="white-box">
+                <header class="white-box__header">
+                    <h1 class="white-box__h1">Enter to win a 3rd generation Nest Learning Thermostat worth $249</h1>
+                </header>
+                <form class="subscribe-form" onsubmit="send(event)">
+                    <div class="subscribe-form__group">
+                        <label for="name" hidden>Name</label>
+                        <input type="text" minlength="2" id="name" name="name" class="subscribe-form__input"
+                            placeholder="Name" required>
+                    </div>
+                    <div class="subscribe-form__group">
+                        <div class="subscribe-form__col__8">
+                            <label for="city" hidden>City</label>
+                            <input id="city" name="city" type="text" class="subscribe-form__input" placeholder="City">
+                        </div>
+                        <div class="subscribe-form__col__4">
+                            <label for="state" hidden>State</label>
+                            <input id="state" name="state" type="text" class="subscribe-form__input" placeholder="State">
+                        </div>
+
+                    </div>
+                    <div class="subscribe-form__group">
+                        <label for="phone" hidden>Phone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="^\(?\d{3}\) \d{3}[- ]?\d{4}$" maxlength="14"
+                            class="subscribe-form__input" placeholder="Phone Number" required>
+                    </div>
+                    <div class="subscribe-form__group">
+                        <label for="email" hidden>Email Address</label>
+                        <input type="email" name="email" id="phone" class="subscribe-form__input" placeholder="Email Address"
+                            required>
+                    </div>
+                    <div class="subscribe-form__group center">
+                        <button type="submit" class="subscribe-form__button">Enter to win</button>
+                    </div>
+
+                </form>
+            </div>
+        </article>
+        <article class="container">
+            <div class="clear-box">
+                <div class="clear-box__header">
+                    <div class="clear-box__line"></div>
+                    <h1 class="clear-box__h1">Even more savings</h1>
+                    <div class="clear-box__line"></div>
+                </div>
+                <div class="clear-box__inner-box">
+                    <div class="clear-box__inner-box__white">
+                        <h2 class="clear-box__h2">Advertorial</h2>
+                        <h3 class="clear-box__h3">Tricks Homeowners Use to Eliminate Bills</h3>
+                        <div class="clear-box__desc">Surging energy bills, unpredictable weather patterns and
+                            dissatisfaction
+                            with utility
+                            companies
+                            have
+                            homeowners scrambling...
+                            <a href="http://google.com" class="read-more" target="_blank">Read more</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="assets/js/vendors/imask.min.js"></script>
+    <script src="assets/js/build/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+$primary-color : #545253;
+$secondary-color: #f6931d;
+$green: #A0BC57;
+$blue:#78BCC6;
+$primary-font: 'Montserrat', sans-serif;
+$gutter: 3%;
+
+@mixin radius($property){
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+    border-radius: $property;
+}
+
+@mixin innershadow(){
+    -moz-box-shadow: inset -1px 2px 2px -3px #000;
+    -webkit-box-shadow: inset -1px 2px 2px -3px #000;
+    box-shadow: inset -1px 2px 2px -3px #000;    
+}
+
+@mixin boxshadow(){
+    -moz-box-shadow:rgba(110,183,194,0.37) 0 7px 14px 0;
+    -webkit-box-shadow: rgba(110,183,194,0.37) 0 7px 14px 0;
+    box-shadow: rgba(110,183,194,0.37) 0 7px 14px 0;
+}

@@ -1,0 +1,186 @@
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4{
+    margin:0;
+}
+
+html{
+    font-size:62.5%;
+    height: 100%;
+}
+
+body{
+    margin:0;
+    font-family: $primary-font;
+    font-weight: 300;
+    -webkit-animation: animatedbg 5s cubic-bezier(1,0,0,1) infinite;
+    animation: animatedbg 5s cubic-bezier(1,0,0,1) infinite;
+    height: 100%;
+}
+
+.bg-pattern{
+    background: url(../images/BG.png) repeat-x  top ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-header{
+  background: $primary-color;
+  color: #FFF;
+  padding:2.3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.white-box{
+    width: 67rem;
+    margin:3.3rem 0 0 0;
+    background:#FFF;
+    @include boxshadow();
+    &__header{
+        @extend .main-header;
+        padding:1.8rem 0;
+        text-align: center;
+    }
+    &__h1{
+        color:#FFF;
+        font-size:1.8rem;
+        line-height: 2.2rem;
+        font-weight: 600;
+        width: 50%;
+    }
+}
+
+.subscribe-form{
+    padding:2.8rem 5.5rem;
+
+    &__group{
+        clear:both;
+    }
+    &__col__8{
+        width:(100% / 1.5) - ($gutter * 4 / 12);
+        margin-right:3%;
+        float: left;
+    }
+    &__col__4{
+        width:(100% / 3) - ($gutter * 8 / 12); 
+        float:left;
+    }
+    &__input{
+        padding:1.5rem 2.4rem;
+        font-size: 1.6rem;
+        color:#747375;
+        border: 1px solid #d8d8d8;
+        @include radius(.4rem);
+        @include innershadow();
+        display: block;
+        width: 100%;
+        margin-bottom:2rem;
+    }
+    &__button{
+        text-transform: uppercase;
+        text-align: center;
+        border:0;
+        padding:1.5rem;
+        font-size:1.6rem;
+        font-weight: 400;
+        font-family: $primary-font;
+        color: #FFF;
+        @include radius(2.5rem);
+        width: 33rem;
+        background: $secondary-color;
+        &:disabled{
+            background-color: #e9e9e9;
+            color:#ccc;
+        }
+    }
+}
+
+.clear-box{
+    width:40rem;
+    margin:4rem 0 9rem 0;
+    font-size:1.2rem;
+    &__header{
+        clear: both;
+    }
+    &__h1{
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        width: (100% / 12) * 8;
+        float: left;
+        margin-top:-1rem;
+        font-size: 1.8rem;
+    }
+    &__h2{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size:1.2rem;
+        color: $green;
+    }
+    &__h3{
+        font-weight: 300;
+        font-size:2rem;
+        margin: 0 0 1rem 0;
+    }
+    &__line{
+        border-bottom:.2rem solid $green;
+        display: block;
+        width: (100% / 12) *  2;
+        float: left;
+    }
+    &__inner-box{
+        padding:1.5rem;
+        border: .2rem solid $green;
+        border-top:0;
+    }
+    &__inner-box__white{
+        background: rgba(255,255,255,.75);
+        padding:1.5rem 2rem 4.5rem 2rem;
+    }
+    &__desc{
+        font-size:1.4rem;
+        margin:0;
+    }
+}
+
+.read-more{
+    color:$blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight:600;
+}
+
+.logo{
+    background: url('../images/Logo@3x.svg') no-repeat;
+    background-size: contain;
+    width:17rem;
+    height: 3.5rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.error{
+    border-color:#D50303;
+}
+
+@-webkit-keyframes animatedbg {
+    0% { background: #ECF8FB }
+    100% { background: #EFEFEF }
+  }
+  
+@keyframes animatedbg {
+    0% { background: #ECF8FB }
+    100% { background: #EFEFEF }
+}
+

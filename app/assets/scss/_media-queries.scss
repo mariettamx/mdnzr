@@ -1,0 +1,45 @@
+//Mobile
+@media all and (max-width: 768px) {
+    $primary-color: #000;
+    .container{
+        padding:1.5rem;
+    }
+    .white-box{
+        width: 100%;
+        margin:0;
+        &__h1{
+            width: 80%;
+        }
+    }
+    .subscribe-form{
+        padding:1.5rem 2.4rem;
+        &__input{
+            padding:1.5rem 1.2rem;
+        }
+        &__button{
+            width: 100%;
+        }
+    }
+    .clear-box{
+        margin:2rem 0;
+        &__h1{
+            font-size:1.5rem
+        }
+        &__desc{
+            font-size:1.3rem;
+        }
+    }
+}
+//Retina support
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi),
+only screen and ( min-resolution: 1.25dppx)
+{      
+      .bg-pattern{
+        background: url(../images/BG@2x.png) repeat-x  top ;
+    }
+}
